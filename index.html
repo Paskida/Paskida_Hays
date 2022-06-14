@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!--My SCSS-CSS files-->
+    <link rel="stylesheet" href="css/index.css" />
+
+    <!--SLICK files-->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <!--<link rel="javascript" href="js/global.js" />-->
+    <!--I have replaced the lonk above to this. For Javascript files it is better to use <script> />-->
+    <script defer src="js/global.js"></script>
+  </head>
+
+  <!-- Add your HTML here -->
+
+  <!-- LAYOUT 
+    - Nav module to open
+    1. <nav class="nav">
+    2.<header class="header">
+    3. <section class="opportunities">
+    4. <section class="welcome">
+    5. <section class="location">
+    6. <footer class="footer">
+  -->
+
+  <!--COMMENTS
+    1.The pink arrow in the hero should anchor to the “Welcome” content.
+    Is not done perfectly, can be improved with JS.
+    2. I have used Slick for the carousel
+    3. There are 2 css files as I have used SASS compiler.
+    4. Media queries are not added.
+    5. I have left SCSS files for you to see them.
+
+   -->
+
+  <body class="container">
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__list__item">
+          <a href="#" class="nav__link">Welcome</a>
+        </li>
+        <li class="navigation__list__item">
+          <a href="#" class="nav__link">About us</a>
+        </li>
+        <li class="navigation__list__item">
+          <a href="#" class="nav__link">Benefits</a>
+        </li>
+        <li class="navigation__list__item">
+          <a href="#" class="nav__link">Working with us</a>
+        </li>
+        <li class="navigation__list__item">
+          <a href="#" class="nav__link">Opportunities</a>
+        </li>
+        <button class="js-nav-close btn btn--transparent">Close</button>
+      </ul>
+    </nav>
+    <nav class="nav sticky">
+      <div class="nav__logo">
+        <img
+          src="img/png/logo_white.png"
+          alt="Travels logo"
+          class="nav__logo__img"
+        />
+      </div>
+
+      <div class="nav__links">
+        <img
+          src="img/svg/linkedin_wild_watermelon.svg"
+          alt="Linkedin Logo"
+          class="nav__links__img nav__links__img__social"
+        />
+        <img
+          src="img/svg/facebook_wild_watermelon.svg"
+          alt="Facebook Logo"
+          class="nav__links__img nav__links__img__social"
+        />
+        <img
+          src="img/svg/twitter_wild_watermelon.svg"
+          alt="Twitter Logo"
+          class="nav__links__img nav__links__img__social"
+        />
+        <img
+          src="img/svg/instagram_wild_watermelon.svg"
+          alt="Instagram Logo"
+          class="nav__links__img nav__links__img__social"
+        />
+        <img
+          src="img/svg/youtube_wild_watermelon.svg"
+          alt="Youtube Logo"
+          class="nav__links__img nav__links__img__social"
+        />
+        <img
+          src="img/svg/menu_burger.svg"
+          alt="Open menu"
+          class="js-nav-open nav__links__img nav__links__img__menu"
+        />
+      </div>
+    </nav>
+
+    <header class="header">
+      <div class="header__fade">
+        <div>
+          <img
+            src="img/hero_image_one.jpg"
+            alt="Hero 1"
+            class="header__fade__img"
+          />
+        </div>
+        <div>
+          <img
+            src="img/hero_image_two.jpg"
+            alt="Hero 2"
+            class="header__fade__img"
+          />
+        </div>
+        <div>
+          <img
+            src="img/hero_image_three.jpg"
+            alt="Hero 3"
+            class="header__fade__img"
+          />
+        </div>
+      </div>
+      <div class="header__text">
+        <h2 class="h__white">Finance oportunities in London</h2>
+        <h1 class="h__white h__bold">Travels</h1>
+        <button class="btn btn--transparent">View all opportunities</button>
+      </div>
+      <div class="header__arr">
+        <a href="#welcome" class="header__arr">
+          <img src="img/svg/arrow_down.svg" alt="Arrow down"
+        /></a>
+      </div>
+    </header>
+    <section class="opportunities">
+      <h2 class="h__white">Featured Opportunities</h2>
+      <div class="opportunities__cards">
+        <div class="opportunities__cards__card">
+          <div class="opportunities__cards__card__name">
+            <h4 class="h__bold">Finance and administration assistant</h4>
+            <h4>London</h4>
+          </div>
+          <button class="btn btn--fullwidth">Apply today</button>
+        </div>
+        <div class="opportunities__cards__card">
+          <div class="opportunities__cards__card__name">
+            <h4 class="h__bold">Finanсial Controller</h4>
+            <h4>London</h4>
+          </div>
+          <button class="btn btn--fullwidth">Apply today</button>
+        </div>
+        <div class="opportunities__cards__card">
+          <div class="opportunities__cards__card__name">
+            <h4 class="h__bold">Senior finance assistant</h4>
+            <h4>London</h4>
+          </div>
+          <button class="btn btn--fullwidth">Apply today</button>
+        </div>
+      </div>
+    </section>
+    <section class="welcome" id="welcome">
+      <div class="welcome__text">
+        <h2 class="h__green">Welcome</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+          volutpat mauris sed pretium rutrum. Maecenas at eros imperdiet, mollis
+          ex id, dictum nulla. Phasellus massa augue, mattis eget tincidunt vel,
+          dictum eget ex. Maecenas eleifend bibendum aliquam. Donec venenatis
+          nulla eget dolor eleifend, et sagittis elit viverra. Etiam tempus,
+          erat in sagittis dignissim, tortor nunc egestas est, eu euismod diam
+          ex sit amet urna. Integer euismod dolor sed nunc cursus, a volutpat
+          enim efficitur. In laoreet orci nec sem mattis convallis. Curabitur
+          cursus lorem velit, sit amet imperdiet elit mollis eget. Curabitur est
+          sem, mollis nec venenatis eget, vehicula quis eros. Maecenas ut nunc a
+          lectus condimentum gravida. Integer ac neque libero. Proin et lorem
+          libero.
+        </p>
+        <p>
+          Sed feugiat ac enim et imperdiet. Mauris porta arcu bibendum lectus
+          elementum sollicitudin. Suspendisse efficitur ut lorem vitae
+          tristique. Aliquam tempus, mi quis ultrices convallis, ipsum tortor
+          ultricies eros, id convallis risus lacus ut lorem. Donec rhoncus
+          sagittis condimentum. In pharetra a odio eget bibendum. Vivamus ligula
+          dolor, convallis nec mauris in, consequat blandit lacus. Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit
+          euismod erat, sit amet porttitor dolor feugiat a. Curabitur cursus
+          eros vel felis tincidunt egestas. Maecenas laoreet felis vel enim
+          vestibulum venenatis.
+        </p>
+        <p class="margin_bottom">Nullam id eleifend mi, ut imperdiet dui.</p>
+        <div class="welcome__text_name">
+          <h4 class="h__bold">Jonathan Doeman</h4>
+          <h4 class="h__bold h__pink">CHIEF EXECUTIVE OFFICER</h4>
+        </div>
+      </div>
+      <div class="welcome__pic">
+        <img
+          src="img/welcome_right.jpg"
+          alt="Plane_img"
+          class="welcome__pic__img"
+        />
+      </div>
+    </section>
+    <section class="location">
+      <div class="location__map">
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe
+              width="800"
+              height="500"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=107%20Cheapside,%20London&t=&z=17&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe
+            ><a href="https://123movies-to.org"></a><br /><style>
+              .mapouter {
+                position: relative;
+                text-align: right;
+                height: 500px;
+                width: 800px;
+              }</style
+            ><a href="https://www.embedgooglemap.net">embedgooglemap.net</a
+            ><style>
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 500px;
+                width: 800px;
+              }
+            </style>
+          </div>
+        </div>
+      </div>
+      <div class="location__address">
+        <h3 class="h__white">Location</h3>
+        <h4 class="h__white">Travels LTD</h4>
+        <p class="h__white margin_bottom">
+          Phasellus commodo interdum turpis, ut eleifend, WC12 3AB
+        </p>
+        <button class="btn btn--transparent">View in Google Maps</button>
+      </div>
+    </section>
+    <footer class="footer">
+      <img src="img/hays_logo.jpg" alt="Hays Logo" class="footer__logo" />
+      <p class="footer__p__small">Hays Digital Solutions | Legal Disclaimers</p>
+      <p class="footer__p__big">
+        © HAYS, RECRUITING EXPERTS WORLDWIDE and the H device are trade marks of
+        Hays plc. Copyright © Hays Specialist Recruitment Limited and Travels
+        Ltd 2019.
+      </p>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+  </body>
+</html>

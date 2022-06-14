@@ -1,0 +1,20 @@
+.opportunities {
+  background-color: #00403a;
+  max-width: 100rem;
+  padding: 0.5rem 5rem;
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    margin: 1rem 0;
+
+    &__card {
+      background-color: white;
+
+      &__name {
+        padding: 1rem 1rem;
+      }
+    }
+  }
+}

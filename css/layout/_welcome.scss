@@ -1,0 +1,17 @@
+.welcome {
+  max-width: 100rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  &__text {
+    margin: 2rem 4rem;
+  }
+
+  &__pic {
+    margin: 3rem 3rem;
+    &__img {
+      display: block;
+      margin: auto 0;
+    }
+  }
+}

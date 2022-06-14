@@ -1,0 +1,12 @@
+.location {
+  max-width: 100rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  &__address {
+    background-color: #401624;
+    height: 500px;
+
+    padding: 10rem 15rem;
+  }
+}
